@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #370617;
+    position: relative;
+    width: 100%;
+}
+
+:root{
+  --color-dark-black:#03071e;
+  --color-dark-maron:#370617;
+  --color-dark-red:#6a040f;
+  --color-dark-red2:#9d0208;
+  --color-dark-nature:#d00000;
+}
+.container {
+    margin: 3.8rem auto;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem;
+
+}
+header h1 {
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: .6rem;
+    width: 55px;
+    border-radius: 4px;
+    margin-left: 2rem;
+}
+header input {
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+header .username{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    padding: .3rem;
+    width: 20%;
+    
+}
+header .username span {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid blue;
+    padding: .45rem 1.3rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+header .username span:hover{
+    background-color: blue;
+    color: #fff;
+}
+header .username img {
+    border-radius: 50%;
+}
+header .sercho{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 30%;
+}
+header .sercho button{
+    position: absolute;
+    font-size: 1.3rem;
+    right: .8rem;
+    top: .8rem;
+    background-color: transparent;
+    border: none;
+}
+.visi{
+    display: block !important;
+}
+
+.heading{
+   
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+textarea{
+    padding: 1rem;
+    border: none;
+    font-size: 1.7rem;
+}
+textarea:focus{
+    outline: none;
+}
+textarea::placeholder{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+label{
+    display:block;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1rem;
+    margin: .4rem;
+    height: 50px;
+    line-height: 50px;
+}
+label:hover{
+    border: none;
+    background-color: rgb(224, 223, 223);
+    color: white;
+}
+.btn{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .3rem 0;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: .4s;
+}
+.btn:hover{
+   background-color: #9d0208;
+   color: #03071e;
+}
+.post{
+    position: relative;
+    display: none;
+    width: 35rem;
+    margin: 1rem auto;
+    background-color:#fff;
+    border-radius: 4px;
+    padding: 1rem;
+}
+.post .icon-x{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    font-size: 2.5rem;
+    color: var(--color-dark-black);
+
+}
+input[type="file"]
+{
+    display: none;
+    border: none;
+}
+
+.users{
+    width: 100vw;
+    max-width: 35rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.user {
+    min-height: 400px;
+    width: 100%;
+    background-color:#ffffff;
+    margin-top: 1rem;
+    padding: .2rem .3rem;
+    border-radius: 8px;
+}
+.bx{
+    padding: 1rem;
+}
+.user  img {
+    width: 100%;
+    height: 350px;
+}
+.sp{
+    display: block;
+    font-style: italic;
+    font-size: 1.2rem;
+    color:#03071e;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.icon{
+    margin-left:.4rem;
+}
+.spp{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    text-align: end;
+    color: #03071e;
+}
+.hed{
+    color: #03071e;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    margin-bottom: 1rem;
+    font-family: 'Anybody', cursive;
+}
+
+.react{
+    border-top: 1px solid rgb(129, 128, 128);
+    margin-top: 1rem;
+    display: flex;
+    padding-top: 1rem;
+}
+.react span{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    color: rgb(138, 136, 136);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.befo{
+    position: relative;
+    margin-top: .6rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    margin-right: 1.3rem;
+}
+.befo::before{
+    content: "2";
+    position: absolute;
+    top: -.5rem;
+    right: -.1rem;
+    font-size: .8rem;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    color: #fff;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+
+
+
+
+/*left nav nbar*/
+
+
+.container .left, .right {
+    position: fixed;
+}
+.container .left{
+  left: 0;
+  top: 3.8rem;
+  z-index: 100;
+  width: 20%;
+  
+}
+.container .right{
+    right: 0;
+    top: 3.8rem;
+    z-index: 100;
+    width: 25%;
+}
+
+.left .con{
+    padding: 1rem;
+}
+.con nav ul {
+    list-style: none;
+}
+
+.con nav ul li {
+    width: 100%;
+    padding: .5rem 2rem;
+    margin: .3rem 0;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+.con nav ul li:hover {
+    background-color: #faa307;
+}
+.con nav ul li:hover a {
+    color: #d00000;
+}
+.con nav ul li:hover .icon-n {
+    color: #fff;
+    padding-right: 2rem;
+}
+.con nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.con nav ul li .icon-n{
+    color: #faa307;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .4s ease-in;
+}
+
+
+/* hoooooooooooooooome*/
+
+.home h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+    color: red;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.623);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1.5rem 0;
+}
+.home p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+.home img {
+    float: right;
+}
+
+.lower{
+    font-size: 1.7rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #faa307;
+    background-color: transparent;
+    padding: .3rem 3rem;
+    color: #faa307;
+    margin: 1rem;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+
+}
+.lower:hover{
+    background-color: #faa307;
+    color: #d00000;
+    border: none;
+    cursor: pointer;
+}
+
+.soch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2rem 0;
+}
+.soch span {
+    font-size: 2rem;
+    margin: 0 .3rem;
+}
+.f1{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.soch span:hover .f1{
+    
+   transform: translateY(10px) scale(1.2);
+}
+
+.fc{
+    color: blue;
+}
+.wc{
+    color: green;
+}
+.in{
+    color: rgb(248, 62, 202);
+}
+.w1{
+    color: red;
+}
+
+
+.box{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(228, 223, 223, 0.4);
+    background-color: #03071e;
+    padding: 10px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box .use1{
+    position: relative;
+    background-color: #070c25c0;
+    padding: .4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.go{
+    display: flex;
+}
+.des{
+    margin-bottom: 1rem;
+}
+.des .mn {
+    color: #cfcccca6;
+    margin: .3rem;
+}
+.us11{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lp1{
+    border: 1px solid cyan;
+    color: #03071e;
+    padding: .3rem 1rem;
+    border-radius: 10px;
+    background-color: cyan;
+}
+.lp2{
+    border: 1px solid blue;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+
+@media (max-width:400px)
+{
+    header{
+        padding: .5rem;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    header h1 {
+        margin: 0;
+        padding: .4rem;
+    }
+    header .username{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    header .username span{
+        font-size: 1.2rem;
+        padding: .2rem 1rem;
+    }
+    header .sercho{
+        width: 75%;
+    }
+    header .sercho input {
+        padding: .3rem;
+    }
+    .left, .right {
+        display: none;
+        width: 100%;
+    }
+    .container{
+        width: 100;
+        padding: 2rem 0;
+        margin: 5.5rem auto !important;
+    }
+    .home h2{
+        font-size: 2.5rem;
+    }
+    .users{
+        padding: .5rem;
+    }
+    
+    .post{
+        width: 90%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    textarea{
+        font-size: 1.3rem;
+        padding: .3rem;
+    }
+    textarea::placeholder{
+        font-size: 1.3rem;
+    }
+    .soch{
+        flex-direction: column;
+    }
+    .s-icon{
+        margin-top: 2rem;
+    }
+    .icon-x{
+        font-size: 1.8rem !important;
+        right: .3rem !important;
+    }
+}
